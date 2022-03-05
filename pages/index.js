@@ -131,7 +131,7 @@ export default function Home() {
   
       const address = await signer.getAddress();
   
-      if (address.toLowerCase() === signer.toLowerCase()) setIsOwner(true);
+      if (address.toLowerCase() === _owner.toLowerCase()) setIsOwner(true);
 
     } catch (error) {
       console.error(error.message)
